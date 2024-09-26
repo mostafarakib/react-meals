@@ -6,7 +6,7 @@ export default function Header(props) {
     <>
       <header className={classes.header}>
         <h1>MealsHub</h1>
-        <HeaderCartButton />
+        <HeaderCartButton cartToggleHandler={props.onCartToggle} />
       </header>
       <div className={classes["main-image"]}>
         <img src={mealsLogo} alt="A table full of delicious food" />
